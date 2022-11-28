@@ -1,0 +1,78 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-color: hsl(225, 95%, 84%);
+  background-repeat: repeat-x;
+  background-position: 0 -170px;
+  animation: waving 1s ease-in-out alternate infinite;
+}
+.bad {
+  display: flex;
+  padding: -11px;
+}
+.nad {
+  padding: -5px;
+  margin: -7px;
+}
+
+.page {
+  height: 100vh;
+}
+img {
+  width: 300px;
+  border-radius: 10px 10px 0 0;
+}
+.hamdy {
+  padding: 5px;
+  margin: 21px;
+  border-radius: 10px;
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  justify-content: first baseline;
+}
+.mm {
+  width: 60px;
+}
+button {
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: -2px 5px 12px 0px hsl(245deg 75% 52% / 52%);
+  border-radius: 10px;
+  color: white;
+  width: 259px;
+  height: 40px;
+  border-color: hsl(245, 75%, 52%);
+}
+button:hover {
+  background-color: hsl(0, 0%, 100%);
+  transition: 2s;
+  border-color: hsl(0, 0%, 0%);
+  color: black;
+}
+h6:hover {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  transition: 2s;
+  padding: 6px;
+  margin: 6px;
+  border-radius: 22px;
+}
+.card {
+  width: 300px;
+  padding: 0px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -3px 4px 10px 0px #00000070;
+}
+@keyframes waving {
+  from {
+    background-position: 0 -170px;
+  }
+  to {
+    background-position: 100% -170px;
+  }
+}
